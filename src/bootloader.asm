@@ -1,30 +1,34 @@
-; bootloader.asm
-BITS 16          ; 16-bit mode
-ORG 0x7C00       ; BIOS loads the bootloader at 0x7C00
+    .section .text
+    .global _start
 
-start:
-    mov ax, 0x07C0
-    add ax, 288
-    mov ss, ax
-    mov sp, 4096
+_start:
+    // Set up stack pointer (SP)
+    ldr x0, =0x8000     // Set stack pointer to 0x8000
+    mov sp, x0          // Set stack pointer
 
-    mov si, msg
-    call print_string
+    // Print the message
+    ldr x0, =msg        // Load the address of the message
+    bl print_string     // Branch to print_string function
 
-    jmp $
+    // Infinite loop (halt)
+1:  b 1b                // Branch back to itself
 
 print_string:
-    mov ah, 0x0E
-.print_char:
-    lodsb
-    cmp al, 0
-    je .done
-    int 0x10
-    jmp .print_char
+    mov x1, x0          // Move address of string to x1
+.next_char:
+    ldrb w0, [x1], #1   // Load byte from address in x1 and increment
+    cmp w0, #0          // Check if it's the null terminator
+    beq .done           // If so, branch to done
+    mov x2, #1          // Set length for write
+    mov x8, #64         // syscall number for write (sys_write)
+    mov x0, #1          // file descriptor: stdout
+    svc #0              // make the syscall
+    b .next_char        // Repeat for next character
 .done:
-    ret
+    ret                  // Return from function
 
-msg db 'Welcome to dtOS!', 0
+msg:
+    .asciz "Welcome to dtOS!"  // Null-terminated string
 
-times 510-($-$$) db 0  ; Fill the rest of the 512 bytes with zeros
-dw 0xAA55              ; Boot signature
+    .section .bss
+    .space 512            // Reserve space for 512 bytes (not used in this example)

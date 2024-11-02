@@ -1,6 +1,5 @@
-/* linker.ld */
-OUTPUT_FORMAT(elf32-i386)
-ENTRY(start)
+OUTPUT_FORMAT(elf64-littlearm)
+ENTRY(_start)
 
 SECTIONS {
     . = 0x100000;
