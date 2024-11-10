@@ -1,14 +1,19 @@
-# pineappleOS
+<h1><img width="48" src="https://freesvg.org/img/Pineapple4.png"> pineappleOS</h1>  
 An operating system that becomes better for everyone, every day.
 
-## TO DO:
+## To Do
 - Create bootsector.
 - Write kernel in C.
 - Link files using Linker script (LD).
 - Use nasm for assembly code.
 - Use gcc for C code.
 - After coding kernel completely, work on Graphical User Interface.
-- Work on smoothness!
+
+## Ideas
+- Privacy and Security comes from Linux. (free & open-source)
+- Smoothness and Animations comes from Mac.
+- User-Friendly UI that combines Mac and Windows features.
+- Developer & Community support comes from Windows.
 
 ## Thanks
 Thanks to [OSDev Wiki](https://wiki.osdev.org) I made this project! 😊
