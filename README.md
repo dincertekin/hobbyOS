@@ -14,6 +14,7 @@ An operating system that becomes better for everyone, every day.
 - Smoothness and Animations comes from Mac.
 - User-Friendly UI that combines Mac and Windows features.
 - Developer & Community support comes from Windows.
+- ARM64 for long-lasting battery and good performance.
 
 ## Thanks
 Thanks to [OSDev Wiki](https://wiki.osdev.org) I made this project! 😊
