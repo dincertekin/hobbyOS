@@ -1,10 +1,17 @@
-# dtOS
+# pineappleOS
 An operating system that becomes better for everyone, every day.
 
-## Build
-You can build the project using `make` command.  
-Do not forget to uncomment `qemu-system-aarch64 -drive format=raw,file=os_image.bin` line.  
-It will automatically run image on qemu.
+## TO DO:
+- Create bootsector.
+- Write kernel in C.
+- Link files using Linker script (LD).
+- Use nasm for assembly code.
+- Use gcc for C code.
+- After coding kernel completely, work on Graphical User Interface.
+- Work on smoothness!
+
+## Thanks
+Thanks to [OSDev Wiki](https://wiki.osdev.org) I made this project! 😊
 
 ## License
 This project is licensed under [MIT License](LICENSE).
