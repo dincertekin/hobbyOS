@@ -25,10 +25,10 @@ print_string:
     svc #0              // make the syscall
     b .next_char        // Repeat for next character
 .done:
-    ret                  // Return from function
+    ret                  // return from function
 
 msg:
-    .asciz "Welcome to dtOS!"  // Null-terminated string
+    .asciz "Welcome to pineappleOS!"
 
     .section .bss
-    .space 512            // Reserve space for 512 bytes (not used in this example)
+    .space 512            // Reserve space for 512 bytes 
