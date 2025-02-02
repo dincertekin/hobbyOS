@@ -2,12 +2,12 @@
 An operating system that becomes better for everyone, every day.
 
 ## To Do
-- Create bootsector.
-- Write kernel in C.
-- Link files using Linker script (LD).
-- Use nasm for assembly code.
-- Use gcc for C code.
-- After coding kernel completely, work on Graphical User Interface.
+- [X] Create bootsector.
+- [ ] Write kernel in C.
+- [ ] Link files using Linker script (LD).
+- [ ] Use nasm for assembly code.
+- [ ] Use gcc for C code.
+- [ ] After coding kernel completely, work on Graphical User Interface.
 
 ## Ideas
 - Privacy and Security comes from Linux. (free & open-source)
