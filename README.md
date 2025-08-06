@@ -20,4 +20,4 @@ An operating system that becomes better for everyone, every day.
 Thanks to [OSDev Wiki](https://wiki.osdev.org) I made this project! 😊
 
 ## License
-This project is licensed under [MIT License](LICENSE).
+This project is licensed under [Apache-2.0 License](LICENSE).
