@@ -1,4 +1,4 @@
-<h1><img width="48" src="https://freesvg.org/img/Pineapple4.png"> pineappleOS</h1>  
+# pineappleOS  
 An operating system that becomes better for everyone, every day.
 
 ## To Do
