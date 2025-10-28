@@ -1,5 +1,5 @@
-# pineappleOS  
-An operating system that becomes better for everyone, every day.
+# hobbyOS  
+The operating system of my dreams. And it becomes better for everyone, every day.
 
 ## To Do
 - [X] Create bootsector.
@@ -13,8 +13,7 @@ An operating system that becomes better for everyone, every day.
 - Privacy and Security comes from Linux. (free & open-source)
 - Smoothness and Animations comes from Mac.
 - User-Friendly UI that combines Mac and Windows features.
-- Developer & Community support comes from Windows.
-- ARM64 for long-lasting battery and good performance.
+- ARM64 CPU for long-lasting battery and good performance.
 
 ## Thanks
 Thanks to [OSDev Wiki](https://wiki.osdev.org) I made this project! 😊
