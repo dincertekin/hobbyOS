@@ -28,7 +28,7 @@ print_string:
     ret                  // return from function
 
 msg:
-    .asciz "Welcome to pineappleOS!"
+    .asciz "Welcome to dincertekin's hobbyOS!"
 
     .section .bss
     .space 512            // Reserve space for 512 bytes 
